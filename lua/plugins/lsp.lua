@@ -1,17 +1,18 @@
-local lspconfig = require 'lspconfig'
+local lspconfig = vim.lsp.config
 
 local capabilities = require('cmp_nvim_lsp').default_capabilities()
 
-lspconfig.pylsp.setup {
+lspconfig['pylsp'] = {
   capabilities = capabilities,
   settings = { pylsp = { plugins = require('project.config').pylsp_plugins } },
-  --cmd = { 'pylsp', '-vv' },
+  -- cmd = { 'pylsp', '-vv' },
 }
-lspconfig.tsserver.setup {
+
+lspconfig['ts_ls'] = {
   capabilities = capabilities,
 }
--- Uses clang-format for formatting
-lspconfig.ccls.setup {
+
+lspconfig['ccls'] = {
   capabilities = capabilities,
 }
 
@@ -58,3 +59,8 @@ for type, icon in pairs(signs) do
 end
 
 --vim.lsp.set_log_level 'debug'
+
+vim.lsp.enable('pylsp')
+vim.lsp.enable('ts_ls') 
+vim.lsp.enable('ccls')
+
