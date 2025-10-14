@@ -23,6 +23,7 @@ local linters = {
   json = { 'eslint_d' },
   jsonc = { 'eslint_d' },
   tex = { 'chktex' },
+  -- rust = { 'cargo' },
 }
 
 local formatters = {
@@ -40,6 +41,7 @@ local formatters = {
   yaml = { 'prettierd' },
   markdown = { 'prettierd' },
   graphql = { 'prettierd' },
+  rust = { 'rustfmt' },
 }
 
 local short_tab_exts = {

@@ -61,6 +61,14 @@ require('lazy').setup {
       vim.fn['mkdp#util#install']()
     end,
   },
+  -- Rust support
+  {
+    'mrcjkb/rustaceanvim',
+    version = '^6', -- Recommended
+    lazy = false, -- This plugin is already lazy
+  },
+  { 'rust-lang/rust.vim' }, -- для автокоманд cargo fmt и синтаксиса
+
   -- Languages that `nvim-treesitter` does not support
   -- Lama
   { 'vpunch/vim-lama-syntax' },

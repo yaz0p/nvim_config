@@ -13,7 +13,7 @@ $ cp nvim/patch.lua nvim/lua/project/
 
 ### Dependencies
 
-If you are ArchLinux user, you may need the following packages:
+You may need the following packages:
 
 - `neovim`
 - `python-pynvim`
@@ -30,9 +30,10 @@ If you are ArchLinux user, you may need the following packages:
 - `stylua`
 - `stylelint`
 - `ripgrep`
-- `ttf-jetbrains-mono-nerd`\*
-- `noto-fonts-emoji`\*
-- `khaser/sway-vim-kbswitch` (GitHub)\*
+- `ttf-jetbrains-mono-nerd`
+- `noto-fonts-emoji`
+- `khaser/sway-vim-kbswitch` (GitHub)
+-  `rust-analyzer` (rustup)
 
 \* -- or some alternative
 

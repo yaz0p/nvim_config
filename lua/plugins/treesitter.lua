@@ -20,6 +20,8 @@ require('nvim-treesitter.configs').setup {
     'html', -- has Jinja2 support but only for HTML files
     'xml',
     'jsonc',
+    -- Rust
+    'rust',
   },
   -- Install parsers synchronously (only applied to `ensure_installed`)
   sync_install = false,
