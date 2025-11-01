@@ -86,6 +86,17 @@ require('lazy').setup {
   },
   -- Auto-switching a keyboard layout
   { 'lyokha/vim-xkbswitch', tag = '0.20', lazy = false },
+  -- Remote connection by ssh
+  {
+       "amitds1997/remote-nvim.nvim",
+       version = "*", -- Pin to GitHub releases
+       dependencies = {
+           "nvim-lua/plenary.nvim", -- For standard functions
+           "MunifTanjim/nui.nvim", -- To build the plugin UI
+           "nvim-telescope/telescope.nvim", -- For picking b/w different remote methods
+       },
+       config = true,
+  },
   -- List of entities
   {
     'stevearc/aerial.nvim',

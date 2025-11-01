@@ -18,3 +18,5 @@ require 'plugins.vimtex'
 require 'plugins.gitsigns'
 require 'plugins.aerial'
 -- require 'plugins.codeium'
+
+require 'plugins.sshfs'
